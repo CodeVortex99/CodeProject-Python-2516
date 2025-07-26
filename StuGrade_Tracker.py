@@ -1,5 +1,5 @@
 
-ID = int(input("Enter Your ID: "))
+ID = int(input("\nEnter Your ID: "))
 Name = input("Enter Your Name: ")
 ATD = float(input("What is your attendance: "))
 
@@ -8,7 +8,7 @@ Subject = 0
 
 while True:
     Subject += 1
-    Score = int(input(f"Enter Score for Subject {Subject}: "))
+    Score = int(input(f"\nEnter Score for Subject {Subject}: "))
     TScore += Score
     
     Ask = input("Do you want to enter another score? (yes/no): ")
@@ -20,9 +20,9 @@ Avg_Score = TScore / Subject
 PStatus = ""
 if Avg_Score >= 85:
     PStatus = "Excellent"
-elif 70 <= Avg_Score <= 84:
+elif 70 <= Avg_Score < 85:
     PStatus = "Good"
-elif 50 <= Avg_Score <= 69:
+elif 50 <= Avg_Score < 70:
     PStatus = "Average"
 elif Avg_Score < 50:
     PStatus = "Needs Improvement"
@@ -39,7 +39,7 @@ print(f"Student Name: {Name.upper()}")
 print(f"Student Attendance: {ATD}%")
 print(f"Total Score: {TScore}")
 print(f"Total Number of Subjects: {Subject}")
-print(f"Average Score: {float(Avg_Score)}")
+print(f"Average Score: {roun(float(Avg_Score),1)}")
 print(f"Performance: {PStatus}")
 print(f"Attendance Status: {AStatus}")
 print("\n ================= ================= \n")
