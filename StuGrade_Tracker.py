@@ -10,7 +10,6 @@ while True:
     Subject += 1
     Score = int(input(f"\nEnter Score for Subject {Subject}: "))
     TScore += Score
-    
     Ask = input("Do you want to enter another score? (yes/no): ")
     if Ask.lower() == "no":
         break
