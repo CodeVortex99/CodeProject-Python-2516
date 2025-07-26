@@ -11,8 +11,8 @@ if Choice == 1:
     PLA = float(input("Enter the principal loan amount: "))
 elif Choice == 2:
     TA = float(input("Enter the total amount:: "))
-    Down_Payment = float(input("Enter the down payment: "))
-    PLA = TA - Down_Payment
+    DP = float(input("Enter the down payment: "))
+    PLA = TA - DP
 else:
     try:
         Choice = int(input("Enter your choice: "))
@@ -25,10 +25,10 @@ print("2. Annual Interest Rate")
 Choice_1= int(input("Enter your choice: "))
 
 if Choice_1 == 1:
-    RoI = float(input("Enter the monthly rate of interest: "))
+    RI = float(input("Enter the monthly rate of interest: "))
 elif Choice_1 == 2:
-    YoI = float(input("Enter the annual rate of interest: "))
-    RoI = YoI / 1200
+    YI = float(input("Enter the annual rate of interest: "))
+    RI = YI / 1200
 else:
     try:
         Choice_1 = int(input("Enter your choice: "))
@@ -51,6 +51,6 @@ else:
     except:
         print("You have to choose between option 1 or 2.")
 
-EMI = (PLA * RoI * (1 + RoI) ** MI) / ((1 + RoI) ** MI - 1)
+EMI = (PLA * RI * (1 + RI) ** MI) / ((1 + RI) ** MI - 1)
 
 print(f"The EMI is: {EMI}")
