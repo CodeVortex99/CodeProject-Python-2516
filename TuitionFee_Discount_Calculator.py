@@ -1,3 +1,46 @@
+# Assessment Task: Tuition Discount Calculation in Python
+
+# Task Requirements:
+    # Variables:
+    # Get user input for the following information:
+    # Student's name 
+    # Student's grade level (1-12) 
+    # Base tuition fee 
+    # Discount percentage 
+    # Academic Topper status (e.g., whether the student is an academic topper or not)
+
+# Input Validation
+    # Implement input validation using conditional statements
+    # Check if grade is between 1-12
+    # Display appropriate error message for invalid grades
+    # Process discount calculation only for valid input
+# Conditional Statements for Discount Calculation:
+    # Use Conditional statements to determine the discount based on the following rules:
+    # For students in grades 9 to 12:
+    # If they are academic toppers, apply a 20% discount.
+    # Otherwise, apply a 10% discount.
+    # For students in grades 6 to 8, apply a 5% discount.
+    # For grades below 6, apply no discount.
+
+# Implement match-case Statement for Additional Discounts:
+    # Implement a match-case statement to apply additional discounts:
+    # For grade 10, add an additional 3% discount.
+    # For grade 12, add an additional 5% discount.
+    # No additional discounts for other grades.
+# Calculation:
+    # Calculate the final tuition fee after applying the discount:
+    # Calculate discount amount
+    # Calculate final fee
+# Output:
+    # Display a detailed summary including
+        # Student name
+        # Grade level
+        # Academic topper status (Yes/No)
+        # Base tuition fee
+        # Total discount percentage
+        # Discount amount saved
+        # Final tuition fee after discount
+
 Name = input("Enter your name: ")
 Grade = int(input("Enter you level between 1 to 12: "))
 B_TuitionFee = float(input("Enter your tuition fee: "))

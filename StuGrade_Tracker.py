@@ -1,3 +1,31 @@
+# Assessment Task: Student Grade Tracker
+    # Collect Student Information:
+    # Student ID 
+    # Student Name 
+    # Attendance 
+    # Number of subjects
+    # Total Score 
+    # Continue input
+
+    # Input Subject Scores:
+        # Repeatedly ask the user to enter scores for multiple subjects.
+        # Accepts "yes" or "Yes" as continuation options
+        # Add each entered score to the total score and increment the number of subjects.
+        # Continuation prompt: Ask the user if they want to enter another score after each entry (allowing them to continue or stop inputting scores).
+    # Calculate Average Score:
+        # Calculate the average score for the student after all scores are entered.
+    # Determine Performance Level:
+        # Use conditional statements to determine performance based on the average score:
+        # 85 and above → "Excellent"
+        # 70 to 84 → "Good"
+        # 50 to 69 → "Average"
+        # Below 50 → "Needs Improvement"
+
+    # Check Attendance Status:
+        # Use a conditional statement to check if attendance is less than 75%. If so, print a WARNING Low Attendance, else OK Attendance Satisfied
+
+    # Display Final Results:
+        # Print out the student’s ID, name, total score, average score, performance level, and attendance with appropriate messages.
 
 ID = int(input("\nEnter Your ID: "))
 Name = input("Enter Your Name: ")
