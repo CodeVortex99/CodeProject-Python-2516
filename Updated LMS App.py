@@ -50,10 +50,8 @@ def Update_Student():
 def Delete_Student():
     Stud_ID = input("Enter your student ID: ")
     Removed = Students.pop(f"{Stud_ID}", None)
-    if Removed:
-        print("Student Successfully Deleted.")
-    else:
-        print("Student Doesn't exist to be deleted.")
+    print("Student Successfully Deleted") if Removed else print("Student Doesn't exist to be deleted.")
+    
     main()
     
 def List_Students():
@@ -72,8 +70,8 @@ def List_Students():
 def Search():
     Stud_ID = input("Enter your student ID: ")
     if Stud_ID in Students:
-        for value in Students[Stud_ID]:
-            for key, value in value.items():
+        for values in Students[Stud_ID]:
+            for key, value in values.items():
                 print(f"{key}: {value}\n")
 
 match Choice:
@@ -93,6 +91,6 @@ match Choice:
         print("\n... Action 5 taking place ...\n")
         Search()
     case 6:
-        print("\n... Exiting the system ...")
         print("Thank you for using the application.")
+        print("\n... Exiting the system ...")
         sys.exit()
